@@ -5,7 +5,7 @@
 	<nopreview/>
 
 	<effect>
-	  <inherits-from>Aircraft/Dromader/Models/Effects/Dromader-metal</inherits-from>
+	  <inherits-from>Aircraft/Dromader/Models/Effects/ReflectCromo</inherits-from>
 	  <object-name>gunpod</object-name>
 	</effect>
 
