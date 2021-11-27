@@ -1,0 +1,12 @@
+<PropertyList>
+
+	<path>gunpod.ac</path>
+
+	<nopreview/>
+
+	<effect>
+	  <inherits-from>Aircraft/Dromader/Models/Effects/Dromader-metal</inherits-from>
+	  <object-name>gunpod</object-name>
+	</effect>
+
+</PropertyList>
