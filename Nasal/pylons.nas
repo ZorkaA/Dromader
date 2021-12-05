@@ -16,9 +16,9 @@ var cannon = stations.SubModelWeapon.new("30mm Cannon", 0.254, 150, [0,1], [], p
 cannon.typeShort = "GUN";
 cannon.brevity = "Guns guns";
 
-var fuelTankLeft1200 = stations.FuelTank.new("Left 1200 L Tank", "TK1200", 6, 317, "jaguar/wingtankL1200");
-var fuelTankCenter1200 = stations.FuelTank.new("Center 1200 L Tank", "TK1200", 7, 317, "jaguar/ventraltank1200");
-var fuelTankRight1200 = stations.FuelTank.new("Right 1200 L Tank", "TK1200", 8, 317, "jaguar/wingtankR1200");
+var fuelTankLeft1200 = stations.FuelTank.new("Left 1200 L Tank", "TK1200", 6, 317, "Dromader/wingtankL1200");
+var fuelTankCenter1200 = stations.FuelTank.new("Center 1200 L Tank", "TK1200", 7, 317, "Dromader/ventraltank1200");
+var fuelTankRight1200 = stations.FuelTank.new("Right 1200 L Tank", "TK1200", 8, 317, "Dromader/wingtankR1200");
 
 fuelTankLeft1200.del();
 fuelTankCenter1200.del();
