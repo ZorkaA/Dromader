@@ -3,7 +3,7 @@
     
     <model>
 	<name>magic2-100</name>
-	<path>Aircraft/Jaguar-GR1/Models/Weapons/MAJIC/magic-2.xml</path>
+	<path>Aircraft/Dromader/Models/Stores/Weapons/MAJIC/magic-2.xml</path>
     </model>
     
     <animation>
@@ -21,7 +21,7 @@
     
     <model>
 	<name>flaminghot</name>
-	<path>Aircraft/Jaguar-GR1/Models/Weapons/FlamesAndSmoke/combustion.xml</path>
+	<path>Aircraft/Dromader/Models/Stores/Weapons/FlamesAndSmoke/combustion.xml</path>
 	<offsets>
 	    <x-m>1.62</x-m>
 	    <y-m>0</y-m>
@@ -48,7 +48,7 @@
     
     <model>
 	<name>Smoke_magic2-100</name>
-	<path>Aircraft/Jaguar-GR1/Models/Weapons/FlamesAndSmoke/smoke.xml</path>
+	<path>Aircraft/Dromader/Models/Stores/Weapons/FlamesAndSmoke/smoke.xml</path>
 	<offsets>
 	    <x-m>3</x-m>
 	    <y-m>0</y-m>
@@ -65,11 +65,11 @@
     
     <model>
 	<name>explosionFire_magic-2-100</name>
-	<path>Aircraft/Jaguar-GR1/Models/Weapons/FlamesAndSmoke/explosionFire.xml</path>
+	<path>Aircraft/Dromader/Models/Stores/Weapons/FlamesAndSmoke/explosionFire.xml</path>
     </model>
     <model>
 	<name>explosionSmoke_magic-2-100</name>
-	<path>Aircraft/Jaguar-GR1/Models/Weapons/FlamesAndSmoke/explosionSmoke.xml</path>
+	<path>Aircraft/Dromader/Models/Stores/Weapons/FlamesAndSmoke/explosionSmoke.xml</path>
     </model>
     
     <animation>
