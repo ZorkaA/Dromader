@@ -4,7 +4,7 @@
 
 	<submodel>
 		<name>bullet flack cannon</name>
-		<model>Aircraft/Jaguar-GR1/Models/Weapons/ADEN/flack.xml</model>
+		<model>Aircraft/Dromader/Models/Stores/Weapons/ADEN/flack.xml</model>
 		<speed>0</speed>
 		<repeat>false</repeat>
 		<delay>0</delay>
