@@ -43,7 +43,7 @@ All measurements below are in English measurements (feet/pounds), per the FG wik
 
  <!-- <submodel> -->
  <!--    <name>Mk3Z</name> -->
- <!--    <model>Aircraft/Jaguar-GR1-GR1/Models/Effects/guns/apibullet-tracer.xml</model> -->
+ <!--    <model>Aircraft/Dromader/Models/Effects/guns/apibullet-tracer.xml</model> -->
  <!--    <trigger>controls/armament/trigger-gun</trigger> -->
  <!--    <speed>3380.0</speed> -->
  <!--    <repeat>true</repeat> -->
@@ -71,7 +71,7 @@ All measurements below are in English measurements (feet/pounds), per the FG wik
   
  <!--  <submodel> -->
  <!--    <name>Mk3Z</name><!-\- 30 mm cannon -\-> -->
- <!--    <model>Aircraft/Jaguar-GR1-GR1/Models/Effects/guns/apibullet-tracer.xml</model> -->
+ <!--    <model>Aircraft/Dromader/Models/Effects/guns/apibullet-tracer.xml</model> -->
  <!--    <trigger>controls/armament/trigger-gun</trigger> -->
  <!--    <speed>3380.0</speed> -->
  <!--    <repeat>true</repeat> -->
@@ -97,7 +97,7 @@ All measurements below are in English measurements (feet/pounds), per the FG wik
   <!-- definitions from Viggen -->
     <submodel>
         <name>left tracer</name>
-        <model>Aircraft/Jaguar-GR1/Models/Weapons/ADEN/tracer.xml</model>
+        <model>Aircraft/Dromader/Models/Stores/Weapons/ADEN/tracer.xml</model>
         <trigger>controls/armament/trigger-gun</trigger>
         <speed>2431.1023</speed>        <!-- ft/sec - 741 m/s-->
         <repeat>true</repeat>
@@ -158,12 +158,12 @@ All measurements below are in English measurements (feet/pounds), per the FG wik
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact-report>sim/ai/aircraft/impact/cannon</impact-report>
         <impact-reports>/ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/Jaguar-GR1/Models/Weapons/ADEN/bullet-submodel.xml</submodel-path>
+        <submodel-path>Aircraft/Dromader/Models/Stores/Weapons/ADEN/bullet-submodel.xml</submodel-path>
     </submodel>
 
     <submodel>
         <name>right tracer</name>
-        <model>Aircraft/Jaguar-GR1/Models/Weapons/ADEN/tracer.xml</model>
+        <model>Aircraft/Dromader/Models/Stores/Weapons/ADEN/tracer.xml</model>
         <trigger>controls/armament/trigger-gun</trigger>
         <speed>2431.1023</speed>        <!-- ft/sec-->
         <repeat>true</repeat>
@@ -224,6 +224,6 @@ All measurements below are in English measurements (feet/pounds), per the FG wik
         <collision-report>sim/ai/aircraft/collision/bullet</collision-report>
         <impact-report>sim/ai/aircraft/impact/cannon</impact-report>
         <impact-reports>/ai/models/model-impact</impact-reports>
-        <submodel-path>Aircraft/Jaguar-GR1/Models/Weapons/ADEN/bullet-submodel.xml</submodel-path>
+        <submodel-path>Aircraft/Dromader/Models/Stores/Weapons/ADEN/bullet-submodel.xml</submodel-path>
     </submodel>
 </PropertyList>
