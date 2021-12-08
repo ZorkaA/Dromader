@@ -151,6 +151,14 @@
 	</circuit-breakers>
 	<dropsystem type="bool">false</dropsystem>
 </controls>
+	
+<submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Dromader/Models/Effects/Guns/submodels.xml</path>
+      <path>Aircraft/Dromader/Models/Weapons/loads.xml</path>
+      <path>Aircraft/Dromader/Models/Weapons/pylons.xml</path>
+      <path>Aircraft/Dromader/Systems/sub_lancer.xml</path>
+</submodels>	
 
 
 
@@ -162,6 +170,63 @@
 		<file>Aircraft/Dromader/Nasal/immat.nas</file>
 		<file>Aircraft/Dromader/Nasal/light.nas</file>
 	</Dromader>
+	<notifications>
+      		<file>Aircraft/Dromader/Nasal/ArmamentNotification.nas</file>
+      		<file>Aircraft/Dromader/Nasal/GeoBridgedTransmitter.nas</file>
+    	</notifications>
+    	<guns>
+      		<file>Aircraft/Dromader/Nasal/weapons.nas</file>
+      		<file>Aircraft/Dromader/Nasal/revi.nas</file>
+    	</guns>
+    	<armament>
+      		<file>Aircraft/Dromader/Nasal/guided-missiles.nas</file> <!-- must be before station-manager -->
+    	</armament>
+    	<stations>
+      		<file>Aircraft/Dromader/Nasal/station-manager.nas</file> <!-- must be before fire-control and pylons -->
+    	</stations>
+    	<fc>
+      		<file>Aircraft/Dromader/Nasal/fire-control.nas</file> <!-- must be before pylons -->
+    	</fc>
+    	<mps>
+      		<file>Aircraft/Dromader/Nasal/mp-stores.nas</file>
+    	</mps>
+    	<pylons>
+      		<file>Aircraft/Dromader/Nasal/pylons.nas</file>
+    	</pylons>
+    	<radardist>
+      		<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    	</radardist>
+    	<radar>
+      		<file>Aircraft/Dromader/Nasal/RADAR/radar2.nas</file>
+      		<file>Aircraft/Dromader/Nasal/RADAR/target_class.nas</file>
+      		<file>Aircraft/Dromader/Nasal/RADAR/radarTool.nas</file>
+    	</radar>
+    	<rcs>
+      		<file>Aircraft/Dromader/Nasal/rcs.nas</file>
+    	</rcs>
+    	<rwr>
+      		<file>Aircraft/Dromader/Nasal/RADAR/rwr.nas</file>
+    	</rwr>
+    	<myradar>
+      		<file>Aircraft/Dromader/Nasal/RADAR/main.nas</file>
+    	</myradar>
+    	<hud>
+      		<file>Aircraft/Dromader/Nasal/HUD/hud_math.nas</file>
+      		<file>Aircraft/Dromader/Nasal/HUD/HUD.nas</file>
+    	</hud>
+    	<damage>
+      		<file>Aircraft/Dromader/Nasal/damage.nas</file>
+	</damage>
+    	<load>
+      		<file>Aircraft/Dromader/Nasal/ext_stores.nas</file>
+    	</load>
+    	<gci>
+		<file>Aircraft/Dromader/Nasal/gci-listener.nas</file>
+    	</gci>                <!-- gci -->
+    	<gun_listener>
+		<file>Aircraft/Dromader/Nasal/gun-listener.nas</file>
+    	</gun_listener>
+  </nasal>
 	<kfs598><file>Aircraft/Dromader/Models/Instruments/KFS-598/kfs598.nas</file></kfs598>
 	<kfs5981><file>Aircraft/Dromader/Models/Instruments/KFS-598-1/kfs598-1.nas</file></kfs5981>
 	<kfs576a><file>Aircraft/Dromader/Models/Instruments/KFS-576A/kfs576a.nas</file></kfs576a>
