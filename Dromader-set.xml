@@ -3,7 +3,7 @@
 
 <sim>
 	<author>Pavel Cueto, Fernando Espinosa</author>
-	<description>PZL M18B Dromader</description>
+	<description>PZL M18B Dromader (Dev Version)</description>
 	<aircraft-version>31-02-2011</aircraft-version>
 	<status>early-production</status>
 	<flight-model>jsb</flight-model>
