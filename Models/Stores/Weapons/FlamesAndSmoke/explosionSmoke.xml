@@ -3,7 +3,7 @@
   <particlesystem>
     <name>ExplosionSmoke</name>
     <texture>smoke.png</texture>
-<!--    <condition>
+    <!--    <condition>
       <property>payload/armament/exocet/flags/explode-smoke-id-2</property>
     </condition>-->
     <emissive type="bool">false</emissive>

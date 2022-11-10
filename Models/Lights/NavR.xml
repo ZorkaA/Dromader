@@ -2,16 +2,16 @@
 
 
 <PropertyList>
-	
-	  <path>NavR.ac</path>
 
- <animation>
-  <type>select</type>
-  <object-name>NavR</object-name>
-  <condition>
-   <property>controls/lighting/nav-lights</property>
-  </condition>
- </animation>
+    <path>NavR.ac</path>
+
+    <animation>
+        <type>select</type>
+        <object-name>NavR</object-name>
+        <condition>
+            <property>controls/lighting/nav-lights</property>
+        </condition>
+    </animation>
 
 
 </PropertyList>

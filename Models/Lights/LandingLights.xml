@@ -2,22 +2,22 @@
 
 
 <PropertyList>
-	
-	  <path>LandingLights.ac</path>
 
- <animation>
+	<path>LandingLights.ac</path>
+
+	<animation>
 		<type>select</type>
 		<object-name>Landing</object-name>
 		<condition>
-  <property>controls/lighting/landing-lights</property>
- </condition>
+			<property>controls/lighting/landing-lights</property>
+		</condition>
 	</animation>
-	
-<animation>
+
+	<animation>
 		<type>noshadow</type>
 		<object-name>Landing</object-name>
 	</animation>
-<!--
+	<!--
 	<animation>
 		<type>flash</type>
 		<object-name>Landing</object-name>

@@ -2,36 +2,36 @@
 
 
 <PropertyList>
-	
-	  <path>Strobe.ac</path>
 
-	  <animation>
-    <type>noshadow</type>
-    <object-name>Strobe</object-name>
-  </animation>
+	<path>Strobe.ac</path>
 
-	  
+	<animation>
+		<type>noshadow</type>
+		<object-name>Strobe</object-name>
+	</animation>
+
+
 	<animation>
 		<type>alpha-test</type>
 		<object-name>Strobe</object-name>
 		<alpha-factor>0.001</alpha-factor>
 	</animation>
-	
+
 	<animation>
 		<type>billboard</type>
 		<object-name>Strobe</object-name>
 		<spherical type="bool">true</spherical>
 	</animation>
 
- <animation>
+	<animation>
 		<type>select</type>
 		<object-name>Strobe</object-name>
 		<condition>
 			<property>/sim/model/Dromader/lighting/strobes/state</property>
 		</condition>
 	</animation>
- 
- <animation>
+
+	<animation>
 		<type>range</type>
 		<min-m>0</min-m>
 		<max-m>25000</max-m>
@@ -49,15 +49,15 @@
 		<interpolation>
 			<entry>
 				<ind>0</ind>
-				<dep alias="../../../../Strobeparams/light-near"/>
+				<dep alias="../../../../Strobeparams/light-near" />
 			</entry>
 			<entry>
 				<ind>500</ind>
-				<dep alias="../../../../Strobeparams/light-med"/>
+				<dep alias="../../../../Strobeparams/light-med" />
 			</entry>
 			<entry>
 				<ind>16000</ind>
-				<dep alias="../../../../Strobeparams/light-far"/>
+				<dep alias="../../../../Strobeparams/light-far" />
 			</entry>
 		</interpolation>
 	</animation>

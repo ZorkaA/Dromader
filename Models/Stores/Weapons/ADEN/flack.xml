@@ -4,12 +4,12 @@
 
 <PropertyList>
 
- <path>flack.ac</path>
+  <path>flack.ac</path>
 
- <animation>
-  <type>billboard</type>
-  <spherical>true</spherical>
- </animation>
+  <animation>
+    <type>billboard</type>
+    <spherical>true</spherical>
+  </animation>
 
   <animation>
     <type>scale</type>

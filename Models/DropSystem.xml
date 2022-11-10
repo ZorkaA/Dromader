@@ -4,52 +4,52 @@
 
 	<path>DropSystem.ac</path>
 
-<animation>
-	<object-name>Boom</object-name>
-	<object-name>Salida</object-name>
-	<object-name>Soporte</object-name>
-</animation>
+	<animation>
+		<object-name>Boom</object-name>
+		<object-name>Salida</object-name>
+		<object-name>Soporte</object-name>
+	</animation>
 
-<effect>
-	<inherits-from>Aircraft/Dromader/Models/Effects/ReflectCromo</inherits-from>
-	<object-name>Boom</object-name>
-	<object-name>Salida</object-name>
-</effect>
+	<effect>
+		<inherits-from>Aircraft/Dromader/Models/Effects/ReflectCromo</inherits-from>
+		<object-name>Boom</object-name>
+		<object-name>Salida</object-name>
+	</effect>
 
-<model>
-	<path>Aircraft/Dromader/Models/Effects/Water_TEST.xml</path>
-</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/Water_TEST.xml</path>
+	</model>
 
-<model>
-	<path>Aircraft/Dromader/Models/Effects/Pesticide_L01.xml</path>
-</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/Pesticide_L01.xml</path>
+	</model>
 
-<model>
-	<path>Aircraft/Dromader/Models/Effects/Pesticide_L02.xml</path>
-</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/Pesticide_L02.xml</path>
+	</model>
 
-<model>
-	<path>Aircraft/Dromader/Models/Effects/Pesticide_R01.xml</path>
-</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/Pesticide_R01.xml</path>
+	</model>
 
-<model>
-	<path>Aircraft/Dromader/Models/Effects/Pesticide_R02.xml</path>
-</model>
-<model>
-	<path>Aircraft/Dromader/Models/Effects/MotorStartSmoke.xml</path>
-</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/Pesticide_R02.xml</path>
+	</model>
+	<model>
+		<path>Aircraft/Dromader/Models/Effects/MotorStartSmoke.xml</path>
+	</model>
 
-<animation>
-	<type>select</type>
-	<object-name>Boom</object-name>
-	<object-name>Salida</object-name>
-	<object-name>Soporte</object-name>
-	<condition>
-		<equals>
-			<property>controls/dropsystem</property>
-			<value>true</value>
-		</equals>
-	</condition>
-</animation>
+	<animation>
+		<type>select</type>
+		<object-name>Boom</object-name>
+		<object-name>Salida</object-name>
+		<object-name>Soporte</object-name>
+		<condition>
+			<equals>
+				<property>controls/dropsystem</property>
+				<value>true</value>
+			</equals>
+		</condition>
+	</animation>
 
 </PropertyList>

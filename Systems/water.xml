@@ -7,7 +7,7 @@
 	<channel name="Payloads">
 
 		<switch name="trash/watertrigger">
-			<default value="0"/>
+			<default value="0" />
 			<test logic="AND" value="-30">
 				/controls/armament/trigger gt 0.9
 				/controls/dropsystem eq 0
@@ -17,7 +17,7 @@
 		</switch>
 
 		<switch name="trash/pesttrigger">
-			<default value="0"/>
+			<default value="0" />
 			<test logic="AND" value="-0.2">
 				/controls/armament/trigger gt 0.9
 				/controls/dropsystem eq 1
@@ -35,4 +35,3 @@
 
 	</channel>
 </system>
-
