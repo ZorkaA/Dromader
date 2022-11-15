@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <PropertyList>
   <!--<path>thrust_flame.ac</path>-->
-  
+
   <path>Aircraft/Generic/Effects/Thruster/thrust_flame.ac</path>
   <nopreview />
   <!--<animation>
@@ -10,28 +10,28 @@
     <y-offset> 0.8 </y-offset>
     <z-offset> 0.8 </z-offset>
   </animation>-->
-    <offsets>
-      <x-m>0</x-m>
-      <y-m>0</y-m>
-      <z-m>0</z-m>
-    </offsets>
+  <offsets>
+    <x-m>0</x-m>
+    <y-m>0</y-m>
+    <z-m>0</z-m>
+  </offsets>
 
-<!--    <animation>
+  <!--    <animation>
       <type>scale</type>
       <object-name>Bounding_box</object-name>
       <x-offset>1.0</x-offset>
       <y-offset>0.15</y-offset>
       <z-offset>0.15</z-offset>
     </animation>-->
-  
-    <effect>
-      <inherits-from>Aircraft/Dromader/Models/Effects/flame/flame</inherits-from>
-      <object-name>Bounding_box</object-name>
-    </effect>
-    
-    <animation>
-      <object-name>Bounding_box</object-name>
-      <enable-hot type="bool">false</enable-hot>
-    </animation>
-    
+
+  <effect>
+    <inherits-from>Aircraft/Dromader/Models/Effects/flame/flame</inherits-from>
+    <object-name>Bounding_box</object-name>
+  </effect>
+
+  <animation>
+    <object-name>Bounding_box</object-name>
+    <enable-hot type="bool">false</enable-hot>
+  </animation>
+
 </PropertyList>

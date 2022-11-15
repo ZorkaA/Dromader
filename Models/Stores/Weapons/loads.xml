@@ -56,7 +56,7 @@
             <y-m>-2.050</y-m>
             <z-m>0.290</z-m>
             <pitch-deg>-0.865</pitch-deg>
-	    <roll-deg>180</roll-deg>
+            <roll-deg>180</roll-deg>
         </offsets>
     </model>
     <animation>
@@ -126,7 +126,7 @@
             </greater-than>
         </condition>
     </animation>
-    
+
     <model>
         <name>left-majic-pos-2</name>
         <path>Aircraft/Jaguar-GR1/Models/Weapons/MAJIC/magic-2.xml</path>
@@ -151,7 +151,7 @@
             </greater-than>
         </condition>
     </animation>
-    
+
     <!--    <model>
         <name>left-GBU-pos-2</name>
         <path>Aircraft/Jaguar-GR1/Models/Weapons/gbu16.xml</path>
@@ -798,7 +798,7 @@
         </condition>
     </animation>
 
-    
+
     <model>
         <name>right-majic-pos-2</name>
         <path>Aircraft/Jaguar-GR1/Models/Weapons/MAJIC/magic-2.xml</path>
@@ -824,7 +824,7 @@
         </condition>
     </animation>
 
- 
+
     <!--    <model>
         <name>right-GBU-pos-2</name>
         <path>Aircraft/Jaguar-GR1/Models/Weapons/gbu16.xml</path>
@@ -967,7 +967,7 @@
         </condition>
     </animation>
 
-       
+
     <model>
         <name>right-majic-pos-1</name>
         <path>Aircraft/Jaguar-GR1/Models/Weapons/MAJIC/magic-2.xml</path>
@@ -976,7 +976,7 @@
             <y-m>2.050</y-m>
             <z-m>0.290</z-m>
             <pitch-deg>-0.865</pitch-deg>
-	    <roll-deg>180</roll-deg>
+            <roll-deg>180</roll-deg>
         </offsets>
     </model>
     <animation>

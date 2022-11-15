@@ -1,499 +1,505 @@
 <?xml version="1.0"?>
 <PropertyList>
 
-<sim>
-	<author>Pavel Cueto, Fernando Espinosa</author>
-	<description>PZL M18B Dromader (Dev Version)</description>
-	<aircraft-version>31-02-2011</aircraft-version>
-	<status>early-production</status>
-	<flight-model>jsb</flight-model>
-	<aero>Dromader</aero>
+	<sim>
+		<author>Pavel Cueto, Fernando Espinosa</author>
+		<description>PZL M18B Dromader (Dev Version)</description>
+		<aircraft-version>31-02-2011</aircraft-version>
+		<status>early-production</status>
+		<flight-model>jsb</flight-model>
+		<aero>Dromader</aero>
 
-	<tags>
-		<tag>ga</tag>
-		<tag>1970s</tag>
-		<tag>1980s</tag>
-		<tag>1990s</tag>
-		<tag>2000s</tag>
-		<tag>2010s</tag>
-		<tag>tail-dragger</tag>
-		<tag>fixed-gear</tag>
-		<tag>piston</tag>
-		<tag>radial</tag>
-		<tag>single-engine</tag>
-	</tags>
+		<tags>
+			<tag>ga</tag>
+			<tag>1970s</tag>
+			<tag>1980s</tag>
+			<tag>1990s</tag>
+			<tag>2000s</tag>
+			<tag>2010s</tag>
+			<tag>tail-dragger</tag>
+			<tag>fixed-gear</tag>
+			<tag>piston</tag>
+			<tag>radial</tag>
+			<tag>single-engine</tag>
+		</tags>
 
-	<rating>
-		<FDM type="int">3</FDM>
-		<systems type="int">2</systems>
-		<cockpit type="int">4</cockpit>
-		<model type="int">4</model>
-	</rating>
+		<rating>
+			<FDM type="int">3</FDM>
+			<systems type="int">2</systems>
+			<cockpit type="int">4</cockpit>
+			<model type="int">4</model>
+		</rating>
 
-	<model>
-		<path archive="y">Aircraft/Dromader/Models/M18B_Dromader.xml</path>
-	</model>
+		<model>
+			<path archive="y">Aircraft/Dromader/Models/M18B_Dromader.xml</path>
+		</model>
 
-  	<model>
-		<path>Aircraft/Dromader/Models/M18B_Dromader.xml</path>
-		<livery>
-			<file type="string">Default</file>
-		</livery>
-	</model>
+		<model>
+			<path>Aircraft/Dromader/Models/M18B_Dromader.xml</path>
+			<livery>
+				<file type="string">Default</file>
+			</livery>
+		</model>
 
-<!-- Configuracion de la vista del piloto -->
+		<!-- Configuracion de la vista del piloto -->
 
-	<view>
-	<internal archive="y">true</internal>
-	<config>
-		<x-offset-m archive="y"> 0.00</x-offset-m>  <!-- Lateral -->
-		<y-offset-m archive="y"> 1.53</y-offset-m>  <!-- Altura -->
-		<z-offset-m archive="y"> 2.23</z-offset-m>  <!-- Profundidad -->
-		<default-field-of-view-deg>60</default-field-of-view-deg>
-		<pitch-offset-deg>-15</pitch-offset-deg>
-	</config>
-	</view>
+		<view>
+			<internal archive="y">true</internal>
+			<config>
+				<x-offset-m archive="y"> 0.00</x-offset-m> <!-- Lateral -->
+				<y-offset-m archive="y"> 1.53</y-offset-m> <!-- Altura -->
+				<z-offset-m archive="y"> 2.23</z-offset-m> <!-- Profundidad -->
+				<default-field-of-view-deg>60</default-field-of-view-deg>
+				<pitch-offset-deg>-15</pitch-offset-deg>
+			</config>
+		</view>
 
-	<startup>
-		<splash-texture>Aircraft/Dromader/splash.png</splash-texture>
-	</startup>
+		<startup>
+			<splash-texture>Aircraft/Dromader/splash.png</splash-texture>
+		</startup>
 
-	<sound>
-		<path archive="y">Aircraft/Dromader/Sounds/Dromader-Sound.xml</path>
-	</sound>
+		<sound>
+			<path archive="y">Aircraft/Dromader/Sounds/Dromader-Sound.xml</path>
+		</sound>
 
-<help>
-	<title>PZL-Mielec M18B "Dromader"</title>
-	<line></line>
-	<key>
-		<name>e</name>
-		<desc>Water drop/Pesticide dust</desc>
-	</key>
-	<key>
-		<name>{ }</name>
-		<desc>Magnetos ON/OFF</desc>
-	</key>
-	<key>
-		<name>S</name>
-		<desc>Starter</desc>
-	</key>
-	<key>
-		<name>d</name>
-		<desc>Open/Close Left-front door</desc>
-	</key>
-	<key>
-		<name>D</name>
-		<desc>Open/Close right-front door</desc>
-	</key>
-	<key>
-		<name>Ctrl-D</name>
-		<desc>Open/Close rear door</desc>
-	</key>
-	<line> Aircraft limits</line>
-	<line>____________________________________________</line>
-	<line> Normal category (Clean configuration)</line>
-	<line>      Load factor ..................... +3.4G; -1.4G</line>
-	<line>      VNE .................................. 148 KIAS</line>
-	<line>      VNO .................................. 121 KIAS</line>
-	<line></line>
-	<line> Restricted category (Cropduster/Firefighter conf.)</line>
-	<line>      Load factor ..................... +2.8G; -1.1G</line>
-	<line>      VNE .................................. 121 KIAS</line>
-	<line>      VNO .................................. 104 KIAS</line>
-	<line></line>
-	<line>      VA .................................... 120 KIAS</line>
-	<line>      VFE .................................. 104 KIAS</line>
-	<line>      Cruise ............................... 90-103 KIAS</line>
-	<line>      Stall .................................. 65 KIAS (estimated)</line>
-	<line></line>
-	<line>      Max takeoff weight (MTOW) ..... 11904 lb</line>
-	<line>      Max landing weight ..................... 9200 lb</line>
-	<line>____________________________________________</line>
-	<line>      Takeoff ............................. Flaps 15'</line>
-	<line>      Landing ............................ Flaps 30'</line>
-	<line>____________________________________________</line>
-	<line>      www.vivefg.org</line>
-</help>
+		<help>
+			<title>PZL-Mielec M18B "Dromader"</title>
+			<line></line>
+			<key>
+				<name>e</name>
+				<desc>Water drop/Pesticide dust</desc>
+			</key>
+			<key>
+				<name>{ }</name>
+				<desc>Magnetos ON/OFF</desc>
+			</key>
+			<key>
+				<name>S</name>
+				<desc>Starter</desc>
+			</key>
+			<key>
+				<name>d</name>
+				<desc>Open/Close Left-front door</desc>
+			</key>
+			<key>
+				<name>D</name>
+				<desc>Open/Close right-front door</desc>
+			</key>
+			<key>
+				<name>Ctrl-D</name>
+				<desc>Open/Close rear door</desc>
+			</key>
+			<line> Aircraft limits</line>
+			<line>____________________________________________</line>
+			<line> Normal category (Clean configuration)</line>
+			<line>      Load factor ..................... +3.4G; -1.4G</line>
+			<line>      VNE .................................. 148 KIAS</line>
+			<line>      VNO .................................. 121 KIAS</line>
+			<line></line>
+			<line> Restricted category (Cropduster/Firefighter conf.)</line>
+			<line>      Load factor ..................... +2.8G; -1.1G</line>
+			<line>      VNE .................................. 121 KIAS</line>
+			<line>      VNO .................................. 104 KIAS</line>
+			<line></line>
+			<line>      VA .................................... 120 KIAS</line>
+			<line>      VFE .................................. 104 KIAS</line>
+			<line>      Cruise ............................... 90-103 KIAS</line>
+			<line>      Stall .................................. 65 KIAS (estimated)</line>
+			<line></line>
+			<line>      Max takeoff weight (MTOW) ..... 11904 lb</line>
+			<line>      Max landing weight ..................... 9200 lb</line>
+			<line>____________________________________________</line>
+			<line>      Takeoff ............................. Flaps 15'</line>
+			<line>      Landing ............................ Flaps 30'</line>
+			<line>____________________________________________</line>
+			<line>      www.vivefg.org</line>
+		</help>
 
-<menubar include="Dialogs/Dromader-menu.xml"/>
+		<menubar include="Dialogs/Dromader-menu.xml" />
 
-  <flaps>
-   <setting>0.000</setting>
-   <setting>0.475</setting> 
-   <setting>0.950</setting> 
-  </flaps>
+		<flaps>
+			<setting>0.000</setting>
+			<setting>0.475</setting>
+			<setting>0.950</setting>
+		</flaps>
 
-</sim>
-    
-<controls>
-	<flight>
-		<aileron-trim>0.0025</aileron-trim>   
-		<elevator-trim>0.00</elevator-trim> 
-		<rudder-trim>0.075</rudder-trim>
-	</flight>
-	<gear>
-		<brake-parking>1</brake-parking>
-		<brake-left>0</brake-left>
-		<brake-right>0</brake-right>
-	</gear>	
-	<door>0</door>
-	<door>0</door>
-	<door>0</door>
-	<lighting>
-		<strobe>0</strobe>
-		<beacon>0</beacon>
-		<nav-lights>0</nav-lights>
-		<landing-lights>0</landing-lights>
-		<instruments-norm>0</instruments-norm>
-	</lighting>
-	<circuit-breakers>
-		<cabin-lights-pwr>false</cabin-lights-pwr>
-	</circuit-breakers>
-	<dropsystem type="bool">false</dropsystem>
-</controls>
-	
-<submodels>
-      <serviceable type="bool">true</serviceable>
-      <path>Aircraft/Dromader/Models/Effects/Guns/submodels.xml</path>
-      <path>Aircraft/Dromader/Models/Weapons/loads.xml</path>
-      <path>Aircraft/Dromader/Models/Weapons/pylons.xml</path>
-      <path>Aircraft/Dromader/Systems/sub_lancer.xml</path>
-</submodels>	
+	</sim>
 
-<weight n="0">
-      <name>pylon1.L</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-      <opt>
-        <name>ALQ-101 ECM pod</name>
-        <lbs>335.0</lbs>
-      </opt>
-    </weight>
+	<controls>
+		<flight>
+			<aileron-trim>0.0025</aileron-trim>
+			<elevator-trim>0.00</elevator-trim>
+			<rudder-trim>0.075</rudder-trim>
+		</flight>
+		<gear>
+			<brake-parking>1</brake-parking>
+			<brake-left>0</brake-left>
+			<brake-right>0</brake-right>
+		</gear>
+		<door>0</door>
+		<door>0</door>
+		<door>0</door>
+		<lighting>
+			<strobe>0</strobe>
+			<beacon>0</beacon>
+			<nav-lights>0</nav-lights>
+			<landing-lights>0</landing-lights>
+			<instruments-norm>0</instruments-norm>
+		</lighting>
+		<circuit-breakers>
+			<cabin-lights-pwr>false</cabin-lights-pwr>
+		</circuit-breakers>
+		<dropsystem type="bool">false</dropsystem>
+	</controls>
 
-    <weight n="1">
-      <name>pylon2.L</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-      <opt>
-        <name>GBU-16</name>
-        <lbs>1094.0</lbs>
-      </opt>
-      <opt>
-        <name>MK-82</name>
-        <lbs>500.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-      <opt>
-        <name>ALQ-101 ECM pod</name>
-        <lbs>335.0</lbs>
-      </opt>
-    </weight>
+	<submodels>
+		<serviceable type="bool">true</serviceable>
+		<path>Aircraft/Dromader/Models/Effects/Guns/submodels.xml</path>
+		<path>Aircraft/Dromader/Models/Weapons/loads.xml</path>
+		<path>Aircraft/Dromader/Models/Weapons/pylons.xml</path>
+		<path>Aircraft/Dromader/Systems/sub_lancer.xml</path>
+	</submodels>
 
-    <weight n="2">
-      <name>pylon3.L</name>
-      <tank>5</tank>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>1000 l Droptank</name>
-        <lbs>204.0</lbs>
-        <gals>211</gals>
-      </opt>
-      <opt>
-        <name>1500 l Droptank</name>
-        <lbs>645.0</lbs>
-        <gals>396</gals>
-      </opt>
-      <opt>
-        <name>GBU-16</name>
-        <lbs>1094.0</lbs>
-      </opt>
-      <opt>
-        <name>MK-82</name>
-        <lbs>500.0</lbs>
-      </opt>
-      <opt>
-        <name>2x-MK-82</name>
-        <lbs>1000.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-      <opt>
-        <name>SeaEagle</name>
-        <lbs>1276.0</lbs>
-      </opt>
-    </weight>
+	<weight n="0">
+		<name>pylon1.L</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+		<opt>
+			<name>ALQ-101 ECM pod</name>
+			<lbs>335.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="3">
-      <name>pylon.C</name>
-      <tank>6</tank>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>1000 l Droptank</name>
-        <lbs>204.0</lbs>
-        <gals>211</gals>
-      </opt>
-      <opt>
-        <name>2x-MK-82</name>
-        <lbs>1000.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-      <opt>
-        <name>SeaEagle</name>
-        <lbs>1276.0</lbs>
-      </opt>
-    </weight>
+	<weight n="1">
+		<name>pylon2.L</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+		<opt>
+			<name>GBU-16</name>
+			<lbs>1094.0</lbs>
+		</opt>
+		<opt>
+			<name>MK-82</name>
+			<lbs>500.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+		<opt>
+			<name>ALQ-101 ECM pod</name>
+			<lbs>335.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="4">
-      <name>pylon3.R</name>
-      <tank>7</tank>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>GBU-16</name>
-        <lbs>1094.0</lbs>
-      </opt>
-      <opt>
-        <name>1000 l Droptank</name>
-        <lbs>204.0</lbs>
-        <gals>211</gals>
-      </opt>
-      <opt>
-        <name>1500 l Droptank</name>
-        <lbs>645.0</lbs>
-        <gals>396</gals>
-      </opt>
-      <opt>
-        <name>MK-82</name>
-        <lbs>500.0</lbs>
-      </opt>
-      <opt>
-        <name>2x-MK-82</name>
-        <lbs>1000.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-      <opt>
-        <name>SeaEagle</name>
-        <lbs>1276.0</lbs>
-      </opt>
-    </weight>
+	<weight n="2">
+		<name>pylon3.L</name>
+		<tank>5</tank>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>1000 l Droptank</name>
+			<lbs>204.0</lbs>
+			<gals>211</gals>
+		</opt>
+		<opt>
+			<name>1500 l Droptank</name>
+			<lbs>645.0</lbs>
+			<gals>396</gals>
+		</opt>
+		<opt>
+			<name>GBU-16</name>
+			<lbs>1094.0</lbs>
+		</opt>
+		<opt>
+			<name>MK-82</name>
+			<lbs>500.0</lbs>
+		</opt>
+		<opt>
+			<name>2x-MK-82</name>
+			<lbs>1000.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+		<opt>
+			<name>SeaEagle</name>
+			<lbs>1276.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="5">
-      <name>pylon2.R</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-      <opt>
-        <name>GBU-16</name>
-        <lbs>1094.0</lbs>
-      </opt>
-      <opt>
-        <name>MK-82</name>
-        <lbs>500.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-    </weight>
+	<weight n="3">
+		<name>pylon.C</name>
+		<tank>6</tank>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>1000 l Droptank</name>
+			<lbs>204.0</lbs>
+			<gals>211</gals>
+		</opt>
+		<opt>
+			<name>2x-MK-82</name>
+			<lbs>1000.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+		<opt>
+			<name>SeaEagle</name>
+			<lbs>1276.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="6">
-      <name>pylon1.R</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-    </weight>
+	<weight n="4">
+		<name>pylon3.R</name>
+		<tank>7</tank>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>GBU-16</name>
+			<lbs>1094.0</lbs>
+		</opt>
+		<opt>
+			<name>1000 l Droptank</name>
+			<lbs>204.0</lbs>
+			<gals>211</gals>
+		</opt>
+		<opt>
+			<name>1500 l Droptank</name>
+			<lbs>645.0</lbs>
+			<gals>396</gals>
+		</opt>
+		<opt>
+			<name>MK-82</name>
+			<lbs>500.0</lbs>
+		</opt>
+		<opt>
+			<name>2x-MK-82</name>
+			<lbs>1000.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+		<opt>
+			<name>SeaEagle</name>
+			<lbs>1276.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="5">
-      <name>pylon2.R</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-      <opt>
-        <name>GBU-16</name>
-        <lbs>1094.0</lbs>
-      </opt>
-      <opt>
-        <name>MK-82</name>
-        <lbs>500.0</lbs>
-      </opt>
-      <opt>
-        <name>ALARM</name>
-        <lbs>590.0</lbs>
-      </opt>
-      <opt>
-        <name>ALQ-101 ECM pod</name>
-        <lbs>335.0</lbs>
-      </opt>
-    </weight>
+	<weight n="5">
+		<name>pylon2.R</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+		<opt>
+			<name>GBU-16</name>
+			<lbs>1094.0</lbs>
+		</opt>
+		<opt>
+			<name>MK-82</name>
+			<lbs>500.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="6">
-      <name>pylon1.R</name>
-      <weight-lb>0</weight-lb>
-      <selected>none</selected>
-      <opt>
-        <name>none</name>
-        <lbs>0</lbs>
-      </opt>
-      <opt>
-        <name>AIM-9 Sidewinder</name>
-        <lbs>190.0</lbs>
-      </opt>
-      <opt>
-        <name>ALQ-101 ECM pod</name>
-        <lbs>335.0</lbs>
-      </opt>
-    </weight>
+	<weight n="6">
+		<name>pylon1.R</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+	</weight>
 
-    <weight n="7">
-      <name>Crew</name>
-      <weight-lb>200</weight-lb>
-      <canopy>
-        <position-norm type="double">0.0</position-norm>
-      </canopy>
-      <min-lb>200</min-lb>
-      <max-lb>400</max-lb>
-    </weight>	
+	<weight n="5">
+		<name>pylon2.R</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+		<opt>
+			<name>GBU-16</name>
+			<lbs>1094.0</lbs>
+		</opt>
+		<opt>
+			<name>MK-82</name>
+			<lbs>500.0</lbs>
+		</opt>
+		<opt>
+			<name>ALARM</name>
+			<lbs>590.0</lbs>
+		</opt>
+		<opt>
+			<name>ALQ-101 ECM pod</name>
+			<lbs>335.0</lbs>
+		</opt>
+	</weight>
+
+	<weight n="6">
+		<name>pylon1.R</name>
+		<weight-lb>0</weight-lb>
+		<selected>none</selected>
+		<opt>
+			<name>none</name>
+			<lbs>0</lbs>
+		</opt>
+		<opt>
+			<name>AIM-9 Sidewinder</name>
+			<lbs>190.0</lbs>
+		</opt>
+		<opt>
+			<name>ALQ-101 ECM pod</name>
+			<lbs>335.0</lbs>
+		</opt>
+	</weight>
+
+	<weight n="7">
+		<name>Crew</name>
+		<weight-lb>200</weight-lb>
+		<canopy>
+			<position-norm type="double">0.0</position-norm>
+		</canopy>
+		<min-lb>200</min-lb>
+		<max-lb>400</max-lb>
+	</weight>
 
 
+	<nasal>
+		<Dromader>
+			<file>Aircraft/Dromader/Nasal/liveries.nas</file>
+			<file>Aircraft/Dromader/Nasal/limits.nas</file>
+			<file>Aircraft/Dromader/Nasal/immat.nas</file>
+			<file>Aircraft/Dromader/Nasal/light.nas</file>
+		</Dromader>
+		<notifications>
+			<file>Aircraft/Dromader/Nasal/ArmamentNotification.nas</file>
+			<file>Aircraft/Dromader/Nasal/GeoBridgedTransmitter.nas</file>
+		</notifications>
+		<guns>
+			<file>Aircraft/Dromader/Nasal/weapons.nas</file>
+			<file>Aircraft/Dromader/Nasal/revi.nas</file>
+		</guns>
+		<armament>
+			<file>Aircraft/Dromader/Nasal/guided-missiles.nas</file> <!-- must be before station-manager -->
+		</armament>
+		<stations>
+			<file>Aircraft/Dromader/Nasal/station-manager.nas</file> <!-- must be before fire-control and pylons -->
+		</stations>
+		<fc>
+			<file>Aircraft/Dromader/Nasal/fire-control.nas</file> <!-- must be before pylons -->
+		</fc>
+		<mps>
+			<file>Aircraft/Dromader/Nasal/mp-stores.nas</file>
+		</mps>
+		<pylons>
+			<file>Aircraft/Dromader/Nasal/pylons.nas</file>
+		</pylons>
+		<radardist>
+			<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+		</radardist>
+		<radar>
+			<file>Aircraft/Dromader/Nasal/RADAR/radar2.nas</file>
+			<file>Aircraft/Dromader/Nasal/RADAR/target_class.nas</file>
+			<file>Aircraft/Dromader/Nasal/RADAR/radarTool.nas</file>
+		</radar>
+		<rcs>
+			<file>Aircraft/Dromader/Nasal/rcs.nas</file>
+		</rcs>
+		<rwr>
+			<file>Aircraft/Dromader/Nasal/RADAR/rwr.nas</file>
+		</rwr>
+		<myradar>
+			<file>Aircraft/Dromader/Nasal/RADAR/main.nas</file>
+		</myradar>
+		<hud>
+			<file>Aircraft/Dromader/Nasal/HUD/hud_math.nas</file>
+			<file>Aircraft/Dromader/Nasal/HUD/HUD.nas</file>
+		</hud>
+		<damage>
+			<file>Aircraft/Dromader/Nasal/damage.nas</file>
+		</damage>
+		<load>
+			<file>Aircraft/Dromader/Nasal/ext_stores.nas</file>
+		</load>
+		<gci>
+			<file>Aircraft/Dromader/Nasal/gci-listener.nas</file>
+		</gci> <!-- gci -->
+		<gun_listener>
+			<file>Aircraft/Dromader/Nasal/gun-listener.nas</file>
+		</gun_listener>
+		<kfs598>
+			<file>Aircraft/Dromader/Models/Instruments/KFS-598/kfs598.nas</file>
+		</kfs598>
+		<kfs5981>
+			<file>Aircraft/Dromader/Models/Instruments/KFS-598-1/kfs598-1.nas</file>
+		</kfs5981>
+		<kfs576a>
+			<file>Aircraft/Dromader/Models/Instruments/KFS-576A/kfs576a.nas</file>
+		</kfs576a>
+		<tankqty>
+			<file>Aircraft/Dromader/Models/Instruments/TankQty/TankQty.nas</file>
+		</tankqty>
+	</nasal>
 
-<nasal>
-	<Dromader>
-		<file>Aircraft/Dromader/Nasal/liveries.nas</file>
-		<file>Aircraft/Dromader/Nasal/limits.nas</file>
-		<file>Aircraft/Dromader/Nasal/immat.nas</file>
-		<file>Aircraft/Dromader/Nasal/light.nas</file>
-	</Dromader>
-	<notifications>
-      		<file>Aircraft/Dromader/Nasal/ArmamentNotification.nas</file>
-      		<file>Aircraft/Dromader/Nasal/GeoBridgedTransmitter.nas</file>
-    	</notifications>
-    	<guns>
-      		<file>Aircraft/Dromader/Nasal/weapons.nas</file>
-      		<file>Aircraft/Dromader/Nasal/revi.nas</file>
-    	</guns>
-    	<armament>
-      		<file>Aircraft/Dromader/Nasal/guided-missiles.nas</file> <!-- must be before station-manager -->
-    	</armament>
-    	<stations>
-      		<file>Aircraft/Dromader/Nasal/station-manager.nas</file> <!-- must be before fire-control and pylons -->
-    	</stations>
-    	<fc>
-      		<file>Aircraft/Dromader/Nasal/fire-control.nas</file> <!-- must be before pylons -->
-    	</fc>
-    	<mps>
-      		<file>Aircraft/Dromader/Nasal/mp-stores.nas</file>
-    	</mps>
-    	<pylons>
-      		<file>Aircraft/Dromader/Nasal/pylons.nas</file>
-    	</pylons>
-    	<radardist>
-      		<file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
-    	</radardist>
-    	<radar>
-      		<file>Aircraft/Dromader/Nasal/RADAR/radar2.nas</file>
-      		<file>Aircraft/Dromader/Nasal/RADAR/target_class.nas</file>
-      		<file>Aircraft/Dromader/Nasal/RADAR/radarTool.nas</file>
-    	</radar>
-    	<rcs>
-      		<file>Aircraft/Dromader/Nasal/rcs.nas</file>
-    	</rcs>
-    	<rwr>
-      		<file>Aircraft/Dromader/Nasal/RADAR/rwr.nas</file>
-    	</rwr>
-    	<myradar>
-      		<file>Aircraft/Dromader/Nasal/RADAR/main.nas</file>
-    	</myradar>
-    	<hud>
-      		<file>Aircraft/Dromader/Nasal/HUD/hud_math.nas</file>
-      		<file>Aircraft/Dromader/Nasal/HUD/HUD.nas</file>
-    	</hud>
-    	<damage>
-      		<file>Aircraft/Dromader/Nasal/damage.nas</file>
-	</damage>
-    	<load>
-      		<file>Aircraft/Dromader/Nasal/ext_stores.nas</file>
-    	</load>
-    	<gci>
-		<file>Aircraft/Dromader/Nasal/gci-listener.nas</file>
-    	</gci>                <!-- gci -->
-    	<gun_listener>
-		<file>Aircraft/Dromader/Nasal/gun-listener.nas</file>
-    	</gun_listener>
- <nasal>
-	<kfs598><file>Aircraft/Dromader/Models/Instruments/KFS-598/kfs598.nas</file></kfs598>
-	<kfs5981><file>Aircraft/Dromader/Models/Instruments/KFS-598-1/kfs598-1.nas</file></kfs5981>
-	<kfs576a><file>Aircraft/Dromader/Models/Instruments/KFS-576A/kfs576a.nas</file></kfs576a>
-	<tankqty><file>Aircraft/Dromader/Models/Instruments/TankQty/TankQty.nas</file></tankqty>
-</nasal>
-
-<limits>
-	<max-flap-extension-speed>
-<!--		<flaps>0.20</flaps> -->
-		<speed>104</speed>
-	</max-flap-extension-speed>
-<!--	<max-flap-extension-speed>
+	<limits>
+		<max-flap-extension-speed>
+			<!--		<flaps>0.20</flaps> -->
+			<speed>104</speed>
+		</max-flap-extension-speed>
+		<!--	<max-flap-extension-speed>
 		<flaps>0.60</flaps>
 		<speed>115</speed>
 	</max-flap-extension-speed>
@@ -502,144 +508,144 @@
 		<speed>104</speed> 
 	</max-flap-extension-speed>
 	<max-gear-extension-speed>129</max-gear-extension-speed> -->
-	<vne>121</vne>
-	<max-positive-g>2.8</max-positive-g>
-	<max-negative-g>-1.1</max-negative-g>
-</limits>
+		<vne>121</vne>
+		<max-positive-g>2.8</max-positive-g>
+		<max-negative-g>-1.1</max-negative-g>
+	</limits>
 
-<consumables>
-    <fuel>
-      <tank n="4">
-        <name>Left Wing Tank</name>
-        <kill-when-empty type="bool">false</kill-when-empty>
-      </tank>
-      <tank n="5">
-        <name>Right Wing Tank</name>
-        <kill-when-empty type="bool">false</kill-when-empty>
-      </tank>
-      <tank n="6">
-        <name>Left 1200 L Tank</name>
-        <kill-when-empty type="bool">false</kill-when-empty>
-        <selected type="bool">false</selected>
-      </tank>
-      <tank n="7">
-        <name>Center 1200 L Tank</name>
-        <kill-when-empty type="bool">false</kill-when-empty>
-        <selected type="bool">false</selected>
-      </tank>
-      <tank n="8">
-        <name>Right 1200 L Tank</name>
-        <kill-when-empty type="bool">false</kill-when-empty>
-        <selected type="bool">false</selected>
-      </tank>
-    </fuel>
-  </consumables>
+	<consumables>
+		<fuel>
+			<tank n="4">
+				<name>Left Wing Tank</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="5">
+				<name>Right Wing Tank</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+			</tank>
+			<tank n="6">
+				<name>Left 1200 L Tank</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+				<selected type="bool">false</selected>
+			</tank>
+			<tank n="7">
+				<name>Center 1200 L Tank</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+				<selected type="bool">false</selected>
+			</tank>
+			<tank n="8">
+				<name>Right 1200 L Tank</name>
+				<kill-when-empty type="bool">false</kill-when-empty>
+				<selected type="bool">false</selected>
+			</tank>
+		</fuel>
+	</consumables>
 
-<payload>
-	<weight>
-		<name type="string">Pilot</name>
-		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
-		<min-lb type="double">0.0</min-lb>
-		<max-lb type="double">300.0</max-lb>
-	</weight>
-	<weight>
-		<name type="string">Baggage</name>
-		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
-		<min-lb type="double">0.0</min-lb>
-		<max-lb type="double">66.0</max-lb>
-	</weight>
-	<weight>
-		<name type="string">Water-Pesticide</name>
-		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
-		<min-lb type="double">0.0</min-lb>
-		<max-lb type="double">4800</max-lb>
-	</weight>
-</payload> 
+	<payload>
+		<weight>
+			<name type="string">Pilot</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" />
+			<min-lb type="double">0.0</min-lb>
+			<max-lb type="double">300.0</max-lb>
+		</weight>
+		<weight>
+			<name type="string">Baggage</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" />
+			<min-lb type="double">0.0</min-lb>
+			<max-lb type="double">66.0</max-lb>
+		</weight>
+		<weight>
+			<name type="string">Water-Pesticide</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" />
+			<min-lb type="double">0.0</min-lb>
+			<max-lb type="double">4800</max-lb>
+		</weight>
+	</payload>
 
-<input>
-<keyboard>
-		
-	<!-- Frenos independientes -->
-	
-	<key n="44">
-		<name>,</name>
-			<desc>brake-left</desc>
-		<binding>
-			<command>nasal</command>
-			<script>
+	<input>
+		<keyboard>
+
+			<!-- Frenos independientes -->
+
+			<key n="44">
+				<name>,</name>
+				<desc>brake-left</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
 			if(getprop("controls/gear/brake-left") > 1) {
 				interpolate("controls/gear/brake-left", 0, 1);
 				} else {
 				interpolate("controls/gear/brake-left", 1, 1);
 			}
 			</script>
-		</binding>
-	</key>
-	
-	<key n="46">
-		<name>.</name>
-			<desc>brake-right</desc>
-		<binding>
-			<command>nasal</command>
-			<script>
+				</binding>
+			</key>
+
+			<key n="46">
+				<name>.</name>
+				<desc>brake-right</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
 			if(getprop("controls/gear/brake-right") > 1) {
 				interpolate("controls/gear/brake-right", 0, 1);
 				} else {
 				interpolate("controls/gear/brake-right", 1, 1);
 			}
 			</script>
-		</binding>
-	</key>
-	
-<!-- Puertas -->
+				</binding>
+			</key>
 
-	<key n="100">
-		<name>d</name>
-			<desc>Open/Close door Izq</desc>
-		<binding>
-			<command>nasal</command>
-			<script>
+			<!-- Puertas -->
+
+			<key n="100">
+				<name>d</name>
+				<desc>Open/Close door Izq</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
 			if(getprop("controls/door[0]") > 0) {
 				interpolate("controls/door[0]", 0, 1);
 				} else {
 				interpolate("controls/door[0]", 1, 1);
 			}
 			</script>
-		</binding>
-	</key>
-	
-	<key n="68">
-		<name>D</name>
-			<desc>Open/Close door Dcha</desc>
-		<binding>
-			<command>nasal</command>
-			<script>
+				</binding>
+			</key>
+
+			<key n="68">
+				<name>D</name>
+				<desc>Open/Close door Dcha</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
 			if(getprop("controls/door[1]") > 0) {
 				interpolate("controls/door[1]", 0, 1);
 				} else {
 				interpolate("controls/door[1]", 1, 1);
 			}
 			</script>
-		</binding>
-	</key>
-	
-	<key n="4">
-		<name>Ctrl-D</name>
-			<desc>Open/Close door TrasIzq</desc>
-		<binding>
-			<command>nasal</command>
-			<script>
+				</binding>
+			</key>
+
+			<key n="4">
+				<name>Ctrl-D</name>
+				<desc>Open/Close door TrasIzq</desc>
+				<binding>
+					<command>nasal</command>
+					<script>
 			if(getprop("controls/door[2]") > 0) {
 				interpolate("controls/door[2]", 0, 1);
 				} else {
 				interpolate("controls/door[2]", 1, 1);
 			}
 			</script>
-		</binding>
-	</key>
+				</binding>
+			</key>
 
-<!-- Pesticida -->
-<!--
+			<!-- Pesticida -->
+			<!--
 	<key n="101">
 		<name>e</name>
 			<desc>Pesticide Trigger</desc> 
@@ -658,41 +664,41 @@
 	</key>
 -->
 
-<!-- Agua -->
-	<key n="101">
-		<name>e</name>
-			<desc>WaterDrop</desc> 
-		<binding>
-			<command>property-assign</command>
-			<property>controls/armament/trigger</property>
-			<value>true</value>
-		</binding>
-		<binding>
-			<command>property-assign</command>
-			<property>fdm/jsbsim/inertia/pointmass-weight-lbs[2]</property>
-			<value>0</value>
-		</binding>
-		<mod-up>
-			<binding>
-				<command>property-assign</command>
-				<property>controls/armament/trigger</property>
-				<value>false</value>
-			</binding> 
-		</mod-up>
-	</key>
+			<!-- Agua -->
+			<key n="101">
+				<name>e</name>
+				<desc>WaterDrop</desc>
+				<binding>
+					<command>property-assign</command>
+					<property>controls/armament/trigger</property>
+					<value>true</value>
+				</binding>
+				<binding>
+					<command>property-assign</command>
+					<property>fdm/jsbsim/inertia/pointmass-weight-lbs[2]</property>
+					<value>0</value>
+				</binding>
+				<mod-up>
+					<binding>
+						<command>property-assign</command>
+						<property>controls/armament/trigger</property>
+						<value>false</value>
+					</binding>
+				</mod-up>
+			</key>
 
-</keyboard>
-</input>
+		</keyboard>
+	</input>
 
-<fdm>
-	<jsbsim>
-		<ice>
-		<wing type="double">0.0</wing>
-		<stabilizer type="double">0.0</stabilizer>
-		<propeller type="double">0.0</propeller>
-		<fuselage type="double">0.0</fuselage>
-		</ice>
-	</jsbsim>
-</fdm>
+	<fdm>
+		<jsbsim>
+			<ice>
+				<wing type="double">0.0</wing>
+				<stabilizer type="double">0.0</stabilizer>
+				<propeller type="double">0.0</propeller>
+				<fuselage type="double">0.0</fuselage>
+			</ice>
+		</jsbsim>
+	</fdm>
 
 </PropertyList>

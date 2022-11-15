@@ -1,7 +1,7 @@
 <PropertyList>
 
-	<path>AGM-114.ac</path>
-	
+    <path>AGM-114.ac</path>
+
     <animation>
         <enable-hot type="bool">false</enable-hot>
     </animation>
